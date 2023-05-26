@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Motor de pasos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="topnav">
+    <h1>Control de motor de pasos <i class="fas fa-cogs"></i></h1>
+  </div>
+  <div class="content">
+        <form>
+          <input type="radio" id="CW" name="direction" value="CW" checked>
+          <label for="CW">Clockwise</label>
+          <input type="radio" id="CCW" name="direction" value="CCW">
+          <label for="CW">Counterclockwise</label><br><br><br>
+          <label for="steps">Numero de pasos:</label>
+          <input type="number" id="steps" name="steps">
+        </form>
+        <button onclick="submitForm()">GO!</button>
+        <p>Estado de motor: <span id="estado-de-motor">Detenido</span></p>
+        <p><i id="gear" class="fas fa-cog"></i> </p>
+  </div>
+  <iframe src="clock/index.html" frameborder="0" width="100%" height="400"></iframe>
+</body>
+<script src="script.js" type="module"></script>
+</html>
