@@ -22,11 +22,6 @@ body {
   margin: 0;
 }
 
-.content {
-  padding: 20px;
-  max-width: max-content;
-  margin: 0 auto;
-}
 
 input[type=number], select {
   width: 100%;
@@ -39,9 +34,9 @@ input[type=number], select {
 }
 
 form{
-  border-radius: 5px;
+  border-radius: 18px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px;
 }
 
 button {
@@ -79,6 +74,11 @@ input[type="radio"]:checked{
   border: 6px solid #1282A2;
 }
 
+h3{
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 #estado-de-motor{
   font-weight: bold;
   color: red;
@@ -111,3 +111,134 @@ input[type="radio"]:checked{
 
 
 /* https://jsfiddle.net/4jytorn5/
+
+.container{
+    align-content: center;
+    text-align: center;
+}
+h3{
+    color: black;
+}
+.time-display{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: #b3f4ff;
+    width: 230px;
+    height: 10%;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-left: 35px;
+
+}
+
+
+.timer{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+#clock{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.alarm-heading{
+    color: black;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.set-alarm-field{
+    
+    color: black;
+    margin-top: -20px;
+    height: 40px;
+    /* background-color: yellowgreen; */
+    padding-top: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.controls button{
+    background-color: #466a99;
+    border-color: #466a99;
+    color: whitesmoke;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight:500;
+}
+
+.controls button:hover{
+    background-color: #204b74;
+}
+
+#myList{
+    list-style-type: none;
+    
+}
+
+#myList li{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    background-color: #204b74;
+    height: 2rem;
+    margin-left: -30px;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+
+}
+
+.time-list{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.time-list span{
+    /* background-color: violet; */
+    width: 160px;
+    margin-right: 18px;
+    
+}
+
+.time-list button{
+    background-color: #5d759d;
+    border-color: #5d759d;
+    border-radius: 3px;
+    border-width: 0px;
+    height: 22px;
+    color: whitesmoke;
+}
+
+
+
+.inner-half{
+  width: 40%;
+
+}
+
+.content {
+  padding: 20px;
+  width: 55%;
+  margin: 0 ;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  box-shadow: rgba(10, 17, 41, .5) 7px 3px;
+}
+
+.contianer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, rgba(242,242,242,1) 52%, rgba(135,206,235,1) 56%);
+}

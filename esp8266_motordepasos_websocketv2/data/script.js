@@ -26,25 +26,19 @@ function onClose(event) {
 }
 
 function submitForm() {
-  const rbs = document.querySelectorAll('input[name="direction"]');
-  direction;
+  const rbs = document.querySelectorAll('input[name="steps"]');
+  var steps = 0;
   for (const rb of rbs) {
     if (rb.checked) {
-      direction = rb.value;
+      steps = rb.value;
       break;
     }
   }
 
   document.getElementById("estado-de-motor").innerHTML = "motor girando...";
   document.getElementById("estado-de-motor").style.color = "blue";
-  if (direction == "CW") {
-    document.getElementById("gear").classList.add("spin");
-  } else {
-    document.getElementById("gear").classList.add("spin-back");
-  }
-
-  var steps = document.getElementById("steps").value;
-  websocket.send(steps + "&" + direction);
+  document.getElementById("gear").classList.add("spin");
+  websocket.send(steps + "&" + "CW");
 }
 
 function onMessage(event) {
