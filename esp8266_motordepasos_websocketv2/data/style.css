@@ -242,3 +242,31 @@ h3{
   justify-content: space-around;
   background: linear-gradient(90deg, rgba(242,242,242,1) 52%, rgba(135,206,235,1) 56%);
 }
+
+@media(max-width: 800px){
+  .contianer{
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(242,242,242,1) 30%, rgba(135,206,235,1) 31%);
+  }
+  
+  .inner-half{
+    width: 80%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .content{
+    width: 100%;
+    padding: 0;
+    box-shadow: rgba(10, 17, 41, .5) 0px 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button{
+    min-width: 20%;
+    max-width: 300px;
+  }
+}
